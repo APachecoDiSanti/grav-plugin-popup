@@ -1,2 +1,4 @@
-# grav-popup-campaign
-A popup plugin to use in Grav for marketing campaigns, newsletter prompts, etc.
+# grav-plugin-popup 
+
+Run the server for development using `docker-compose up`.
+Grav is accessible by going to `localhost:3000`.
