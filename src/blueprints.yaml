@@ -2,10 +2,10 @@ name: Popup
 slug: popup
 type: plugin
 version: 0.1.0
-description: Create and manage popups for your website.
+description: Configurable popups
 icon: plug
 author:
-  name: Agustín Pacheco Di Santi
+  name: Agustin Pacheco Di Santi
   email: pachecodisanti@outlook.com
 homepage: https://github.com/APachecoDiSanti/grav-plugin-popup
 demo: http://demo.yoursite.com
@@ -30,21 +30,7 @@ form:
         0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
-    timeout:
+    text_var:
       type: text
-      size: x-small
-      label: Number of seconds to wait before showing popup
-      default: 60
-      validate:
-        type: number
-        min: 1
-    mouseleave:
-      type: toggle
-      label: Show popup when user's mouse leaves the window
-      highlight: 1
-      default: 1
-      options:
-        1: Enabled
-        0: Disabled
-      validate:
-        type: bool
+      label: PLUGIN_POPUP.TEXT_VARIABLE
+      help: PLUGIN_POPUP.TEXT_VARIABLE_HELP

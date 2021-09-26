@@ -53,13 +53,26 @@ class PopupPlugin extends Plugin
         // Enable the main events we are interested in
         $this->enable([
             // Put your main events here
+            'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
+            'onAssetsInitialized' => ['onAssetsInitialized', 0]
         ]);
     }
 
+    /**
+     * Add current directory to twig lookup paths.
+     */
+    public function onTwigTemplatePaths()
+    {
+        $this->grav['twig']->twig_paths[] = 'user/plugins/popup/templates';
+    }
+
     public function onAssetsInitialized(): void {
-        $stylesheet = 'plugin://css/popup.css';
-        $script = 'plugin://js/popup.js';
-        $this->grav['assets']->addCss($stylesheet);
-        $this->grav['assets']->addJs($script);
+        // print_r($this->config());
+        // $stylesheet = 'plugin://css/popup.css';
+        // $script = 'plugin://js/popup.js';
+        $stylesheet ='user/plugins/popup/css/popup.css';
+        $script = 'user/plugins/popup/js/popup.js';
+        $this->grav['assets']->addCss($stylesheet, ['position' => 'before']);
+        $this->grav['assets']->addJs($script, ['group' => 'bottom']);
     }
 }

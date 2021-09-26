@@ -62,3 +62,5 @@ class Popup {
 window.onload = function() {
   new Popup();
 }
+
+console.log("ADDED!");

@@ -1,13 +1,13 @@
 {
   "name": "apachecodisanti/popup",
   "type": "grav-plugin",
-  "description": "Create and manage popups for your website.",
+  "description": "Configurable popups",
   "keywords": ["plugin"],
   "homepage": "https://github.com/APachecoDiSanti/grav-plugin-popup",
   "license": "MIT",
   "authors": [
     {
-      "name": "Agustín Pacheco Di Santi",
+      "name": "Agustin Pacheco Di Santi",
       "email": "pachecodisanti@outlook.com",
       "role": "Developer"
     }

@@ -2,7 +2,7 @@
 
 **This README.md file should be modified to describe the features, installation, configuration, and general usage of the plugin.**
 
-The **Popup** Plugin is an extension for [Grav CMS](http://github.com/getgrav/grav). Create and manage popups for your website.
+The **Popup** Plugin is an extension for [Grav CMS](http://github.com/getgrav/grav). Configurable popups
 
 ## Installation
 
