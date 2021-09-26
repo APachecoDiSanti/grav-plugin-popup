@@ -55,4 +55,11 @@ class PopupPlugin extends Plugin
             // Put your main events here
         ]);
     }
+
+    public function onAssetsInitialized(): void {
+        $stylesheet = 'plugin://css/popup.css';
+        $script = 'plugin://js/popup.js';
+        $this->grav['assets']->addCss($stylesheet);
+        $this->grav['assets']->addJs($script);
+    }
 }
